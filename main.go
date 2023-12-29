@@ -15,6 +15,10 @@ func main() {
 
 	router.POST(apiVersion+"Login", Login)
 	router.POST(apiVersion+"Siswa", Siswa)
+	router.POST(apiVersion+"Kelas", Kelas)
+	router.POST(apiVersion+"UserLogin", UserLogin)
+	router.POST(apiVersion+"KelasActive", KelasActive)
+	router.POST(apiVersion+"JadwalEkskul", JadwalEkskul)
 
 	PORT := os.Getenv("PORT")
 
